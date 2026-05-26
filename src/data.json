@@ -106,7 +106,7 @@
       {
         "name": "AI & Agentic Systems",
         "items": [
-          { "name": "GitHub Copilot CLI", "level": "Expert", "years": 2 },
+          { "name": "GitHub Copilot CLI/Claude Code", "level": "Expert", "years": 2 },
           { "name": "LLM Integration", "level": "Intermediate", "years": 1 },
           { "name": "Agentic Workflows", "level": "Intermediate", "years": 1 },
           { "name": "MCP / CopilotKit", "level": "Intermediate", "years": 1 }
@@ -133,9 +133,8 @@
       {
         "name": "Observability",
         "items": [
-          { "name": "ELK Stack", "level": "Advanced", "years": 1 },
-          { "name": "Distributed Tracing", "level": "Advanced", "years": 4 },
-          { "name": "Correlation ID Framework", "level": "Advanced", "years": 3 },
+          { "name": "ELK Stack", "level": "Intermediate", "years": 1 },
+          { "name": "Distributed Tracing", "level": "Intermediate", "years": 4 },
           { "name": "Alerting Systems", "level": "Intermediate", "years": 4 }
         ]
       }
