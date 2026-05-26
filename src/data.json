@@ -97,18 +97,17 @@
       {
         "name": "Languages & Backend",
         "items": [
-          { "name": "Golang", "level": "Expert", "years": 9 },
+          { "name": "Golang", "level": "Expert", "years": 6 },
           { "name": "PHP", "level": "Advanced", "years": 5 },
-          { "name": "Node.js", "level": "Intermediate", "years": 3 },
-          { "name": "Bash / Shell", "level": "Advanced", "years": 7 }
+          { "name": "Node.js", "level": "Intermediate", "years": 1 }
         ]
       },
       {
         "name": "Databases",
         "items": [
-          { "name": "MySQL", "level": "Expert", "years": 9 },
-          { "name": "MongoDB", "level": "Advanced", "years": 5 },
-          { "name": "Redis", "level": "Advanced", "years": 5 },
+          { "name": "MySQL", "level": "Intermediate", "years": 4 },
+          { "name": "MongoDB", "level": "Advanced", "years": 6 },
+          { "name": "Redis", "level": "Intermediate", "years": 5 },
           { "name": "Google Cloud Spanner", "level": "Intermediate", "years": 3 }
         ]
       },
@@ -116,26 +115,26 @@
         "name": "Cloud & Infrastructure",
         "items": [
           { "name": "Google Cloud Platform", "level": "Expert", "years": 5 },
-          { "name": "Kubernetes", "level": "Advanced", "years": 4 },
-          { "name": "Docker", "level": "Expert", "years": 5 },
-          { "name": "GitHub Actions CI/CD", "level": "Advanced", "years": 4 }
+          { "name": "Kubernetes", "level": "Intermediate", "years": 6 },
+          { "name": "Docker", "level": "Advanced", "years": 6 },
+          { "name": "GitHub Actions CI/CD", "level": "Intermediate", "years": 4 }
         ]
       },
       {
         "name": "Observability",
         "items": [
-          { "name": "ELK Stack", "level": "Advanced", "years": 4 },
+          { "name": "ELK Stack", "level": "Advanced", "years": 1 },
           { "name": "Distributed Tracing", "level": "Advanced", "years": 4 },
           { "name": "Correlation ID Framework", "level": "Advanced", "years": 3 },
-          { "name": "Alerting Systems", "level": "Advanced", "years": 3 }
+          { "name": "Alerting Systems", "level": "Intermediate", "years": 4 }
         ]
       },
       {
         "name": "AI & Agentic Systems",
         "items": [
           { "name": "GitHub Copilot CLI", "level": "Expert", "years": 2 },
-          { "name": "LLM Integration", "level": "Advanced", "years": 2 },
-          { "name": "Agentic Workflows", "level": "Advanced", "years": 1 },
+          { "name": "LLM Integration", "level": "Intermediate", "years": 1 },
+          { "name": "Agentic Workflows", "level": "Intermediate", "years": 1 },
           { "name": "MCP / CopilotKit", "level": "Intermediate", "years": 1 }
         ]
       }
