@@ -14,8 +14,8 @@ interface AwardsProps {
 
 const AwardBlock: React.FC<AwardItem> = ({ title, date = '', organiser = '', details = '' }) => {
     return (
-        <div className="glass p-6 rounded-2xl border-l-4 border-l-amber-500 hover:border-amber-500/30 transition-all duration-300 hover-lift flex gap-5 items-start w-full">
-            <div className="w-12 h-12 rounded-xl bg-amber-500/10 flex items-center justify-center text-amber-500 shrink-0 shadow-sm border border-amber-500/20">
+        <div className="glass p-6 rounded-2xl border-l-4 border-l-primary hover:border-primary/30 transition-all duration-300 hover-lift flex gap-5 items-start w-full">
+            <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center text-primary shrink-0 shadow-sm border border-primary/20">
                 <Trophy className="w-6 h-6" />
             </div>
             <div className="flex-grow min-w-0">
@@ -46,7 +46,7 @@ const Awards: React.FC<AwardsProps> = ({ awards = [] }) => {
             id="awards"
         >
             <div className="flex items-center gap-4 mb-12">
-                <div className="w-12 h-12 rounded-2xl bg-amber-500/10 border border-amber-500/20 flex items-center justify-center text-amber-500">
+                <div className="w-12 h-12 rounded-2xl bg-primary/10 border border-primary/20 flex items-center justify-center text-primary">
                     <Trophy className="w-6 h-6" />
                 </div>
                 <div>
