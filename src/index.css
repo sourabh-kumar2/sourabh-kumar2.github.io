@@ -44,7 +44,7 @@
 }
 
 .text-gradient {
-    @apply bg-clip-text text-transparent bg-gradient-to-r from-primary via-[#a855f7] to-[#c4b5fd];
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-[#6d28d9] via-[#7c3aed] to-[#9333ea];
 }
 
 .hover-lift {
