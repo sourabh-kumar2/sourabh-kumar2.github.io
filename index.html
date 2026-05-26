@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="Sourabh Kumar | Staff Backend Engineer | Portfolio" />
+        <meta name="author" content="Sourabh Kumar" />
+        <title>Sourabh Kumar | Staff Backend Engineer Portfolio</title>
+
+        <meta name="color-scheme" content="light dark">
+        <script>
+            {
+                const colorScheme = localStorage.getItem('theme-mode');
+                if (colorScheme) {
+                    document.querySelector('meta[name="color-scheme"]').content = colorScheme;
+                    if (colorScheme === 'dark') {
+                        document.documentElement.classList.add('dark');
+                    } else {
+                        document.documentElement.classList.remove('dark');
+                    }
+                } else {
+                    const systemDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+                    if (systemDark) {
+                        document.documentElement.classList.add('dark');
+                    }
+                }
+            }
+        </script>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap"></noscript>
+      <script type="module" crossorigin src="/assets/index-CJhhjD4M.js"></script>
+      <link rel="stylesheet" crossorigin href="/assets/index-D1_rnnjB.css">
+    </head>
+    <body class="bg-slate-50 text-slate-800 dark:bg-slate-950 dark:text-slate-100 transition-colors duration-300 font-sans antialiased overflow-x-hidden">
+        <div id="root"></div>
+    </body>
+</html>
