@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    html {
+        scroll-behavior: smooth;
+        scrollbar-width: thin;
+        scrollbar-color: rgba(189, 93, 56, 0.3) transparent;
+    }
+
+    body {
+        @apply bg-slate-50 text-slate-800 dark:bg-slate-950 dark:text-slate-100 transition-colors duration-300 font-sans antialiased overflow-x-hidden;
+    }
+
+    ::-webkit-scrollbar { width: 8px; height: 8px; }
+    ::-webkit-scrollbar-track { background: transparent; }
+    .dark ::-webkit-scrollbar-track { background: #0b0f19; }
+    ::-webkit-scrollbar-thumb {
+        background: #cbd5e1;
+        border-radius: 9999px;
+        border: 2px solid transparent;
+        background-clip: padding-box;
+    }
+    .dark ::-webkit-scrollbar-thumb {
+        background: #334155;
+        border: 2px solid transparent;
+        background-clip: padding-box;
+    }
+    ::-webkit-scrollbar-thumb:hover { background-color: #94a3b8; }
+    .dark ::-webkit-scrollbar-thumb:hover { background-color: #475569; }
+}
+
+.glass {
+    @apply bg-white/70 dark:bg-slate-900/50 backdrop-blur-md border border-slate-200/50 dark:border-slate-850/50;
+}
+
+.glass-nav {
+    @apply bg-slate-100/90 dark:bg-slate-950/80 backdrop-blur-lg border-r border-slate-200/50 dark:border-slate-850/50;
+}
+
+.radial-glow {
+    background: radial-gradient(circle 600px at var(--x, 0px) var(--y, 0px), rgba(189, 93, 56, 0.08), transparent 80%);
+}
+
+.text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-primary via-[#e67e52] to-amber-500;
+}
+
+.hover-lift {
+    @apply transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:shadow-primary/5;
+}

@@ -1,0 +1,200 @@
+{
+  "about": {
+    "name": "Sourabh Kumar",
+    "phone_number": "9871770308",
+    "email_id": "sourabhsingh2405@gmail.com",
+    "address": "Noida, India",
+    "about": "Staff-level backend engineer with 9.5 years of experience designing and delivering distributed systems, fintech platforms, and AI-powered products. Deep expertise in Golang, cloud-native architecture, microservices, and agentic AI workflows. Proven ability to lead technical strategy, drive system-wide performance improvements, and scale engineering teams. Experienced in building high-throughput, low-latency systems on Kubernetes, Kafka, and Google Cloud infrastructure.",
+    "socials": {
+      "linkedin": "https://linkedin.com/in/sourabh-kumar2",
+      "github": "https://github.com/sourabh-kumar2"
+    }
+  },
+  "experience": [
+    {
+      "designation": "Lead Engineer II",
+      "organization": "Brevo (formerly Sendinblue)",
+      "duration": "Jan 2024 – Present",
+      "logo": "",
+      "skills": ["Golang", "CubeJS", "AG-UI", "MCP", "CopilotKit", "GCP", "Kubernetes", "Observability", "LLM Integration"],
+      "description": [
+        "Architected and delivered Brevo Data Layer, an agentic analytics platform on CubeJS enabling natural language querying of business data; integrated AG-UI, MCP, and CopilotKit for streaming responses with built-in query validation and dynamic visualizations (line, bar, pie, donut, tabular).",
+        "Embedded GitHub Copilot CLI into the engineering workflow, reducing vulnerability fix cycles from 2 hours to 15 minutes, cutting test generation time by 75%, and automating release and rollback PR creation.",
+        "Designed and implemented a distributed infrastructure overhaul that improved system throughput by 30% and reduced cloud operational costs across production services.",
+        "Developed a company-wide unified observability system incorporating correlation ID propagation, structured logging, and alerting thresholds, reducing mean time to resolution (MTTR) by 40%.",
+        "Defined and enforced platform-wide API security standards including signed URL implementation for time-limited, secure resource access.",
+        "Led technical design reviews and architecture decisions across multiple backend services; provided engineering mentorship to a team of 8 engineers, reducing onboarding time by 25%.",
+        "Collaborated with product and business stakeholders on R&D initiatives, contributing to a 15% improvement in market competitiveness through new product capabilities."
+      ]
+    },
+    {
+      "designation": "Lead Engineer",
+      "organization": "Brevo (formerly Sendinblue)",
+      "duration": "Jan 2022 – Dec 2023",
+      "logo": "",
+      "skills": ["Golang", "Microservices", "MySQL", "Google Cloud Spanner", "REST APIs", "GitHub Actions"],
+      "description": [
+        "Led end-to-end technical design and delivery of fintech platform features, owning architecture from requirements through production.",
+        "Architected and published a reusable Golang validation library adopted across multiple internal services, reducing duplicated logic and maintenance overhead.",
+        "Established automated testing frameworks and code quality gates, significantly improving release confidence and reducing production defect rates.",
+        "Partnered with cross-functional stakeholders to align backend architecture with product strategy and compliance requirements."
+      ]
+    },
+    {
+      "designation": "Senior Software Engineer",
+      "organization": "Brevo (formerly Sendinblue)",
+      "duration": "Apr 2020 – Dec 2021",
+      "logo": "",
+      "skills": ["Golang", "PHP", "Microservices", "CI/CD", "GitHub Actions", "Performance Optimization"],
+      "description": [
+        "Led migration of legacy PHP monolith components to Golang microservices, reducing technical debt and service coupling.",
+        "Optimized critical API paths, achieving p95 latency under 3 seconds on high-traffic fintech endpoints.",
+        "Designed and implemented CI/CD pipelines using GitHub Actions, improving deployment frequency and system stability."
+      ]
+    },
+    {
+      "designation": "Lead PHP Developer",
+      "organization": "ESEC Forte Technologies Pvt Ltd",
+      "duration": "Jul 2019 – Apr 2020",
+      "logo": "",
+      "skills": ["PHP", "Angular 8", "CodeIgniter"],
+      "description": [
+        "Developed and optimized content management features using Angular 8 and CodeIgniter; managed delivery milestones from design to release."
+      ]
+    },
+    {
+      "designation": "Software Engineer",
+      "organization": "E-Square Alliance Pvt Ltd",
+      "duration": "Nov 2018 – Jun 2019",
+      "logo": "",
+      "skills": ["PHP", "Angular", "Laravel", "MySQL", "REST APIs"],
+      "description": [
+        "Designed database schemas and REST API contracts for enterprise applications; built a role-based CMS using Angular and Laravel."
+      ]
+    },
+    {
+      "designation": "Software Engineer",
+      "organization": "Tech Mahindra",
+      "duration": "Aug 2016 – Oct 2018",
+      "logo": "",
+      "skills": ["PHP", "Microservices", "AutoIT", "CyberArk PAM"],
+      "description": [
+        "Built and maintained microservices for internal enterprise portals; integrated CyberArk PAM with applications via AutoIT scripting; refactored legacy code to improve maintainability and performance."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "name": "B.M.I.E.T, Sonepat",
+      "degree": "B.Tech",
+      "specilization": "Electronics and Communication Engineering",
+      "duration": "Jul 2012 – Jun 2016",
+      "location": "Sonepat, Haryana"
+    }
+  ],
+  "skills": {
+    "categories": [
+      {
+        "name": "Languages & Backend",
+        "items": [
+          { "name": "Golang", "level": "Expert", "years": 9 },
+          { "name": "PHP", "level": "Advanced", "years": 5 },
+          { "name": "Node.js", "level": "Intermediate", "years": 3 },
+          { "name": "Bash / Shell", "level": "Advanced", "years": 7 }
+        ]
+      },
+      {
+        "name": "Databases",
+        "items": [
+          { "name": "MySQL", "level": "Expert", "years": 9 },
+          { "name": "MongoDB", "level": "Advanced", "years": 5 },
+          { "name": "Redis", "level": "Advanced", "years": 5 },
+          { "name": "Google Cloud Spanner", "level": "Intermediate", "years": 3 }
+        ]
+      },
+      {
+        "name": "Cloud & Infrastructure",
+        "items": [
+          { "name": "Google Cloud Platform", "level": "Expert", "years": 5 },
+          { "name": "Kubernetes", "level": "Advanced", "years": 4 },
+          { "name": "Docker", "level": "Expert", "years": 5 },
+          { "name": "GitHub Actions CI/CD", "level": "Advanced", "years": 4 }
+        ]
+      },
+      {
+        "name": "Observability",
+        "items": [
+          { "name": "ELK Stack", "level": "Advanced", "years": 4 },
+          { "name": "Distributed Tracing", "level": "Advanced", "years": 4 },
+          { "name": "Correlation ID Framework", "level": "Advanced", "years": 3 },
+          { "name": "Alerting Systems", "level": "Advanced", "years": 3 }
+        ]
+      },
+      {
+        "name": "AI & Agentic Systems",
+        "items": [
+          { "name": "GitHub Copilot CLI", "level": "Expert", "years": 2 },
+          { "name": "LLM Integration", "level": "Advanced", "years": 2 },
+          { "name": "Agentic Workflows", "level": "Advanced", "years": 1 },
+          { "name": "MCP / CopilotKit", "level": "Intermediate", "years": 1 }
+        ]
+      }
+    ],
+    "workflows": [
+      "Microservices Architecture",
+      "Event-Driven Architecture (Kafka)",
+      "Google Pub/Sub & gRPC",
+      "REST API Design",
+      "Distributed Systems Design",
+      "High-Throughput Low-Latency Systems",
+      "Agile Development & Scrum",
+      "Technical Design Reviews"
+    ]
+  },
+  "projects": [
+    {
+      "title": "Lyra",
+      "period": "2024",
+      "description": "Designed and published an open-source Go library for orchestrating dependent tasks as a Directed Acyclic Graph (DAG) with automatic concurrency, type-safe result passing, and built-in cycle detection.",
+      "link": "",
+      "github": "https://github.com/sourabh-kumar2/lyra",
+      "image": "",
+      "skills": ["Go", "DAG", "Concurrency", "Type Safety", "Open Source"]
+    },
+    {
+      "title": "DNS-Discovery Tool",
+      "period": "2023",
+      "description": "Built a high-performance in-memory DNS server in Go supporting dynamic service discovery with A, AAAA, and TXT record resolution, eliminating hardcoded service configurations.",
+      "link": "",
+      "github": "https://github.com/sourabh-kumar2",
+      "image": "",
+      "skills": ["Go", "DNS", "Service Discovery", "In-Memory", "High Performance"]
+    }
+  ],
+  "awards": [
+    {
+      "title": "Iron Pillar Award",
+      "date": "2024",
+      "organiser": "Brevo",
+      "details": "Recognized for exceptional contribution to the organization's core infrastructure and sustained technical excellence across engineering initiatives."
+    },
+    {
+      "title": "Spotlight Award",
+      "date": "2023",
+      "organiser": "Brevo",
+      "details": "Awarded for outstanding performance and significant impact on engineering team productivity and product delivery quality."
+    },
+    {
+      "title": "Pat On The Back Award",
+      "date": "May 2018",
+      "organiser": "Tech Mahindra",
+      "details": "Commended for exceptional dedication and contributions to enterprise portal development and cross-functional project delivery."
+    },
+    {
+      "title": "Excellence Certificate",
+      "date": "Sept 2017",
+      "organiser": "Tech Mahindra",
+      "details": "Recognized for consistent excellence and high-quality delivery across software engineering projects and client engagements."
+    }
+  ]
+}
