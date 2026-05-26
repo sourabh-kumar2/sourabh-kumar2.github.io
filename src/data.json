@@ -99,7 +99,8 @@
         "items": [
           { "name": "Golang", "level": "Expert", "years": 6 },
           { "name": "PHP", "level": "Advanced", "years": 5 },
-          { "name": "Node.js", "level": "Intermediate", "years": 1 }
+          { "name": "Node.js", "level": "Intermediate", "years": 1 },
+          { "name": "Python", "level": "Beginner", "years": 1 }
         ]
       },
       {
