@@ -1,0 +1,953 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Sourabh Kumar | Staff Backend Engineer | Portfolio" />
+  <meta name="author" content="Sourabh Kumar" />
+  <title>Sourabh Kumar | Staff Backend Engineer Portfolio</title>
+  <meta name="color-scheme" content="light dark" />
+
+  <!-- Prevent flash of un-themed content -->
+  <script>
+    (function () {
+      var t = localStorage.getItem('theme');
+      var dark = t === 'dark' || (!t && window.matchMedia('(prefers-color-scheme: dark)').matches);
+      if (dark) document.documentElement.classList.add('dark');
+    })();
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<!-- ===== SVG SPRITE ===== -->
+<svg style="display:none" xmlns="http://www.w3.org/2000/svg">
+  <symbol id="i-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/>
+  </symbol>
+  <symbol id="i-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9z"/>
+  </symbol>
+  <symbol id="i-menu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/>
+  </symbol>
+  <symbol id="i-x" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M18 6 6 18"/><path d="m6 6 12 12"/>
+  </symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M20 10c0 6-8 13-8 13s-8-7-8-13a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/>
+  </symbol>
+  <symbol id="i-phone" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.92 14 19.79 19.79 0 0 1 1.85 5.58 2 2 0 0 1 3.82 3.4h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 11a16 16 0 0 0 6.15 6.15l1.86-1.86a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7a2 2 0 0 1 1.72 2Z"/>
+  </symbol>
+  <symbol id="i-mail" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+  </symbol>
+  <symbol id="i-linkedin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/>
+  </symbol>
+  <symbol id="i-github" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/>
+  </symbol>
+  <symbol id="i-download" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" x2="12" y1="15" y2="3"/>
+  </symbol>
+  <symbol id="i-briefcase" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <rect width="20" height="14" x="2" y="7" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/>
+  </symbol>
+  <symbol id="i-calendar" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <rect width="18" height="18" x="3" y="4" rx="2" ry="2"/><line x1="16" x2="16" y1="2" y2="6"/><line x1="8" x2="8" y1="2" y2="6"/><line x1="3" x2="21" y1="10" y2="10"/>
+  </symbol>
+  <symbol id="i-grad" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/>
+  </symbol>
+  <symbol id="i-cpu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <rect width="16" height="16" x="4" y="4" rx="2"/><rect width="6" height="6" x="9" y="9" rx="1"/><path d="M15 2v2M15 20v2M2 15h2M2 9h2M20 15h2M20 9h2M9 2v2M9 20v2"/>
+  </symbol>
+  <symbol id="i-award" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="12" cy="8" r="6"/><path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"/>
+  </symbol>
+  <symbol id="i-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/>
+  </symbol>
+  <symbol id="i-trophy" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 22h16"/><path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"/><path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"/><path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"/>
+  </symbol>
+  <symbol id="i-link" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+  </symbol>
+  <symbol id="i-folder" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M20 20a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.9a2 2 0 0 1-1.69-.9L9.6 3.9A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2Z"/>
+  </symbol>
+</svg>
+
+<!-- ===== MOBILE TOP NAV ===== -->
+<nav class="mobile-nav" id="mobileNav">
+  <a href="#about" class="mobile-nav-brand">Sourabh Kumar</a>
+  <div class="mobile-nav-controls">
+    <button class="icon-btn" id="themeToggleMobile" aria-label="Toggle theme">
+      <svg class="icon icon-sm theme-sun-icon"><use href="#i-sun"/></svg>
+      <svg class="icon icon-sm theme-moon-icon"><use href="#i-moon"/></svg>
+    </button>
+    <button class="icon-btn" id="menuToggle" aria-label="Toggle menu">
+      <svg class="icon icon-sm" id="menuOpenIcon"><use href="#i-menu"/></svg>
+      <svg class="icon icon-sm" id="menuCloseIcon" style="display:none"><use href="#i-x"/></svg>
+    </button>
+  </div>
+</nav>
+
+<!-- ===== MOBILE DRAWER ===== -->
+<div class="drawer-overlay" id="drawerOverlay">
+  <div class="mobile-drawer" id="mobileDrawer">
+    <div class="drawer-header">
+      <span class="drawer-title">Navigation</span>
+      <button class="icon-btn" id="drawerClose" aria-label="Close">
+        <svg class="icon icon-sm"><use href="#i-x"/></svg>
+      </button>
+    </div>
+    <ul class="drawer-nav-list">
+      <li><a href="#about"      class="drawer-nav-link">About</a></li>
+      <li><a href="#experience" class="drawer-nav-link">Experience</a></li>
+      <li><a href="#education"  class="drawer-nav-link">Education</a></li>
+      <li><a href="#skills"     class="drawer-nav-link">Skills</a></li>
+      <li><a href="#projects"   class="drawer-nav-link">Projects</a></li>
+      <li><a href="#awards"     class="drawer-nav-link">Awards</a></li>
+    </ul>
+  </div>
+</div>
+
+<!-- ===== DESKTOP SIDEBAR ===== -->
+<nav class="sidebar" id="sidebar">
+  <div class="sidebar-top">
+    <a href="#about" class="profile-link">
+      <div class="profile-glow-ring"></div>
+      <div class="profile-avatar">
+        <!--
+          To use your photo, replace the <span> below with:
+          <img src="profile.jpg" alt="Sourabh Kumar" class="profile-img" />
+        -->
+        <span class="profile-monogram">SK</span>
+      </div>
+    </a>
+    <h2 class="sidebar-name">Sourabh Kumar</h2>
+    <p class="sidebar-subtitle">Staff Backend Engineer</p>
+    <ul class="sidebar-nav-list">
+      <li><a href="#about"      class="sidebar-nav-link" data-section="about">About</a></li>
+      <li><a href="#experience" class="sidebar-nav-link" data-section="experience">Experience</a></li>
+      <li><a href="#education"  class="sidebar-nav-link" data-section="education">Education</a></li>
+      <li><a href="#skills"     class="sidebar-nav-link" data-section="skills">Skills</a></li>
+      <li><a href="#projects"   class="sidebar-nav-link" data-section="projects">Projects</a></li>
+      <li><a href="#awards"     class="sidebar-nav-link" data-section="awards">Awards</a></li>
+    </ul>
+  </div>
+  <div class="sidebar-footer">
+    <button class="theme-toggle-btn" id="themeToggle" aria-label="Toggle theme">
+      <svg class="icon icon-sm theme-sun-icon"><use href="#i-sun"/></svg>
+      <svg class="icon icon-sm theme-moon-icon"><use href="#i-moon"/></svg>
+      <span class="theme-toggle-label theme-light-label">Light Mode</span>
+      <span class="theme-toggle-label theme-dark-label">Dark Mode</span>
+    </button>
+  </div>
+</nav>
+
+<!-- ===== MAIN CONTENT ===== -->
+<main class="main-content">
+
+  <!-- ══════════════════════ ABOUT ══════════════════════ -->
+  <section id="about" class="section-about">
+    <div class="about-orb orb-1"></div>
+    <div class="about-orb orb-2"></div>
+    <div class="about-inner">
+
+      <div class="availability-badge">
+        <span class="badge-ping"></span>
+        Available for senior roles
+      </div>
+
+      <h1 class="about-name">Sourabh Kumar</h1>
+
+      <div class="about-contacts">
+        <span class="contact-item">
+          <svg class="icon icon-sm text-primary"><use href="#i-pin"/></svg>
+          Noida, India
+        </span>
+        <span class="dot-sep"></span>
+        <span class="contact-item">
+          <svg class="icon icon-sm text-primary"><use href="#i-phone"/></svg>
+          <a href="tel:+919871770308" class="contact-link">(+91) 9871770308</a>
+        </span>
+        <span class="dot-sep"></span>
+        <span class="contact-item">
+          <svg class="icon icon-sm text-primary"><use href="#i-mail"/></svg>
+          <a href="mailto:sourabhsingh2405@gmail.com" class="contact-link">sourabhsingh2405@gmail.com</a>
+        </span>
+      </div>
+
+      <p class="about-bio">
+        Staff-level backend engineer with 9.5 years of experience designing and delivering distributed
+        systems, fintech platforms, and AI-powered products. Deep expertise in Golang, cloud-native
+        architecture, microservices, and agentic AI workflows. Proven ability to lead technical strategy,
+        drive system-wide performance improvements, and scale engineering teams. Experienced in building
+        high-throughput, low-latency systems on Kubernetes, Kafka, and Google Cloud infrastructure.
+      </p>
+
+      <div class="about-cta">
+        <div class="social-links">
+          <a href="https://linkedin.com/in/sourabh-kumar2" target="_blank" rel="noreferrer"
+             class="social-btn social-linkedin" aria-label="LinkedIn">
+            <svg class="icon icon-sm"><use href="#i-linkedin"/></svg>
+          </a>
+          <a href="https://github.com/sourabh-kumar2" target="_blank" rel="noreferrer"
+             class="social-btn social-github" aria-label="GitHub">
+            <svg class="icon icon-sm"><use href="#i-github"/></svg>
+          </a>
+        </div>
+        <a href="resume.pdf" target="_blank" rel="noreferrer" class="btn btn-primary">
+          Download Resume
+          <svg class="icon icon-sm icon-bounce"><use href="#i-download"/></svg>
+        </a>
+        <a href="#projects" class="btn btn-secondary">View Projects</a>
+      </div>
+
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- ══════════════════════ EXPERIENCE ══════════════════════ -->
+  <section id="experience" class="section">
+    <div class="section-header">
+      <div class="section-icon-wrap">
+        <svg class="icon"><use href="#i-briefcase"/></svg>
+      </div>
+      <div>
+        <h2 class="section-title">Experience</h2>
+        <p class="section-subtitle">Professional Timeline</p>
+      </div>
+    </div>
+
+    <div class="timeline">
+
+      <!-- Lead Engineer II @ Brevo -->
+      <div class="timeline-item">
+        <div class="timeline-line"></div>
+        <div class="timeline-node"></div>
+        <div class="glass-card exp-card">
+          <div class="exp-header">
+            <div class="exp-left">
+              <div class="company-badge brevo-badge">B</div>
+              <div>
+                <h3 class="exp-title">Lead Engineer II</h3>
+                <div class="exp-org">Brevo (formerly Sendinblue)</div>
+              </div>
+            </div>
+            <div class="exp-duration">
+              <svg class="icon icon-xs"><use href="#i-calendar"/></svg>
+              Jan 2024 – Present · Noida
+            </div>
+          </div>
+          <ul class="exp-bullets">
+            <li>Architected and delivered <strong>Brevo Data Layer</strong>, an agentic analytics platform on CubeJS enabling natural language querying of business data; integrated AG-UI, MCP, and CopilotKit for streaming responses with built-in query validation and dynamic visualizations (line, bar, pie, donut, tabular).</li>
+            <li>Embedded GitHub Copilot CLI into the engineering workflow, reducing vulnerability fix cycles from 2 hours to 15 minutes, cutting test generation time by 75%, and automating release and rollback PR creation.</li>
+            <li>Designed and implemented a distributed infrastructure overhaul that improved <strong>system throughput by 30%</strong> and reduced cloud operational costs across production services.</li>
+            <li>Developed a company-wide unified observability system incorporating correlation ID propagation, structured logging, and alerting thresholds, <strong>reducing MTTR by 40%</strong>.</li>
+            <li>Defined and enforced platform-wide API security standards including signed URL implementation for time-limited, secure resource access.</li>
+            <li>Led technical design reviews and architecture decisions across multiple backend services; provided engineering mentorship to a team of 8 engineers, reducing onboarding time by 25%.</li>
+            <li>Collaborated with product and business stakeholders on R&amp;D initiatives, contributing to a 15% improvement in market competitiveness through new product capabilities.</li>
+          </ul>
+          <div class="skill-tags-section">
+            <div class="skill-tags-label">Skills Used</div>
+            <div class="skill-tags">
+              <span class="skill-tag">Golang</span>
+              <span class="skill-tag">CubeJS</span>
+              <span class="skill-tag">AG-UI</span>
+              <span class="skill-tag">MCP</span>
+              <span class="skill-tag">CopilotKit</span>
+              <span class="skill-tag">GCP</span>
+              <span class="skill-tag">Kubernetes</span>
+              <span class="skill-tag">Observability</span>
+              <span class="skill-tag">LLM Integration</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Lead Engineer @ Brevo -->
+      <div class="timeline-item">
+        <div class="timeline-line"></div>
+        <div class="timeline-node"></div>
+        <div class="glass-card exp-card">
+          <div class="exp-header">
+            <div class="exp-left">
+              <div class="company-badge brevo-badge">B</div>
+              <div>
+                <h3 class="exp-title">Lead Engineer</h3>
+                <div class="exp-org">Brevo (formerly Sendinblue)</div>
+              </div>
+            </div>
+            <div class="exp-duration">
+              <svg class="icon icon-xs"><use href="#i-calendar"/></svg>
+              Jan 2022 – Dec 2023 · Noida
+            </div>
+          </div>
+          <ul class="exp-bullets">
+            <li>Led end-to-end technical design and delivery of fintech platform features, owning architecture from requirements through production.</li>
+            <li>Architected and published a reusable Golang validation library adopted across multiple internal services, reducing duplicated logic and maintenance overhead.</li>
+            <li>Established automated testing frameworks and code quality gates, significantly improving release confidence and reducing production defect rates.</li>
+            <li>Partnered with cross-functional stakeholders to align backend architecture with product strategy and compliance requirements.</li>
+          </ul>
+          <div class="skill-tags-section">
+            <div class="skill-tags-label">Skills Used</div>
+            <div class="skill-tags">
+              <span class="skill-tag">Golang</span>
+              <span class="skill-tag">Microservices</span>
+              <span class="skill-tag">MySQL</span>
+              <span class="skill-tag">Google Cloud Spanner</span>
+              <span class="skill-tag">REST APIs</span>
+              <span class="skill-tag">GitHub Actions</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Senior Software Engineer @ Brevo -->
+      <div class="timeline-item">
+        <div class="timeline-line"></div>
+        <div class="timeline-node"></div>
+        <div class="glass-card exp-card">
+          <div class="exp-header">
+            <div class="exp-left">
+              <div class="company-badge brevo-badge">B</div>
+              <div>
+                <h3 class="exp-title">Senior Software Engineer</h3>
+                <div class="exp-org">Brevo (formerly Sendinblue)</div>
+              </div>
+            </div>
+            <div class="exp-duration">
+              <svg class="icon icon-xs"><use href="#i-calendar"/></svg>
+              Apr 2020 – Dec 2021 · Noida
+            </div>
+          </div>
+          <ul class="exp-bullets">
+            <li>Led migration of legacy PHP monolith components to Golang microservices, reducing technical debt and service coupling.</li>
+            <li>Optimized critical API paths, achieving p95 latency under 3 seconds on high-traffic fintech endpoints.</li>
+            <li>Designed and implemented CI/CD pipelines using GitHub Actions, improving deployment frequency and system stability.</li>
+          </ul>
+          <div class="skill-tags-section">
+            <div class="skill-tags-label">Skills Used</div>
+            <div class="skill-tags">
+              <span class="skill-tag">Golang</span>
+              <span class="skill-tag">PHP</span>
+              <span class="skill-tag">Microservices</span>
+              <span class="skill-tag">CI/CD</span>
+              <span class="skill-tag">GitHub Actions</span>
+              <span class="skill-tag">Performance Optimization</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Lead PHP Developer @ ESEC Forte -->
+      <div class="timeline-item">
+        <div class="timeline-line"></div>
+        <div class="timeline-node"></div>
+        <div class="glass-card exp-card">
+          <div class="exp-header">
+            <div class="exp-left">
+              <div class="company-badge esec-badge">EF</div>
+              <div>
+                <h3 class="exp-title">Lead PHP Developer</h3>
+                <div class="exp-org">ESEC Forte Technologies Pvt Ltd</div>
+              </div>
+            </div>
+            <div class="exp-duration">
+              <svg class="icon icon-xs"><use href="#i-calendar"/></svg>
+              Jul 2019 – Apr 2020 · Bangalore
+            </div>
+          </div>
+          <ul class="exp-bullets">
+            <li>Developed and optimized content management features using Angular 8 and CodeIgniter; managed delivery milestones from design to release.</li>
+          </ul>
+          <div class="skill-tags-section">
+            <div class="skill-tags-label">Skills Used</div>
+            <div class="skill-tags">
+              <span class="skill-tag">PHP</span>
+              <span class="skill-tag">Angular 8</span>
+              <span class="skill-tag">CodeIgniter</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Software Engineer @ E-Square Alliance -->
+      <div class="timeline-item">
+        <div class="timeline-line"></div>
+        <div class="timeline-node"></div>
+        <div class="glass-card exp-card">
+          <div class="exp-header">
+            <div class="exp-left">
+              <div class="company-badge esq-badge">ES</div>
+              <div>
+                <h3 class="exp-title">Software Engineer</h3>
+                <div class="exp-org">E-Square Alliance Pvt Ltd</div>
+              </div>
+            </div>
+            <div class="exp-duration">
+              <svg class="icon icon-xs"><use href="#i-calendar"/></svg>
+              Nov 2018 – Jun 2019 · New Delhi
+            </div>
+          </div>
+          <ul class="exp-bullets">
+            <li>Designed database schemas and REST API contracts for enterprise applications; built a role-based CMS using Angular and Laravel.</li>
+          </ul>
+          <div class="skill-tags-section">
+            <div class="skill-tags-label">Skills Used</div>
+            <div class="skill-tags">
+              <span class="skill-tag">PHP</span>
+              <span class="skill-tag">Angular</span>
+              <span class="skill-tag">Laravel</span>
+              <span class="skill-tag">MySQL</span>
+              <span class="skill-tag">REST APIs</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Software Engineer @ Tech Mahindra -->
+      <div class="timeline-item">
+        <div class="timeline-node"></div>
+        <div class="glass-card exp-card">
+          <div class="exp-header">
+            <div class="exp-left">
+              <div class="company-badge tm-badge">TM</div>
+              <div>
+                <h3 class="exp-title">Software Engineer</h3>
+                <div class="exp-org">Tech Mahindra</div>
+              </div>
+            </div>
+            <div class="exp-duration">
+              <svg class="icon icon-xs"><use href="#i-calendar"/></svg>
+              Aug 2016 – Oct 2018 · Pune
+            </div>
+          </div>
+          <ul class="exp-bullets">
+            <li>Built and maintained microservices for internal enterprise portals; integrated CyberArk PAM with applications via AutoIT scripting; refactored legacy code to improve maintainability and performance.</li>
+          </ul>
+          <div class="skill-tags-section">
+            <div class="skill-tags-label">Skills Used</div>
+            <div class="skill-tags">
+              <span class="skill-tag">PHP</span>
+              <span class="skill-tag">Microservices</span>
+              <span class="skill-tag">AutoIT</span>
+              <span class="skill-tag">CyberArk PAM</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- ══════════════════════ EDUCATION ══════════════════════ -->
+  <section id="education" class="section">
+    <div class="section-header">
+      <div class="section-icon-wrap">
+        <svg class="icon"><use href="#i-grad"/></svg>
+      </div>
+      <div>
+        <h2 class="section-title">Education</h2>
+        <p class="section-subtitle">Academic Credentials</p>
+      </div>
+    </div>
+
+    <div class="edu-list">
+      <div class="edu-item">
+        <div class="edu-icon-wrap">
+          <svg class="icon"><use href="#i-grad"/></svg>
+        </div>
+        <div class="glass-card edu-card">
+          <div class="edu-header">
+            <div>
+              <h3 class="edu-name">B.M.I.E.T, Sonepat</h3>
+              <div class="edu-degree">B.Tech – Electronics &amp; Communication Engineering</div>
+            </div>
+            <div class="exp-duration">
+              <svg class="icon icon-xs"><use href="#i-calendar"/></svg>
+              Jul 2012 – Jun 2016
+            </div>
+          </div>
+          <div class="edu-meta">
+            <div class="edu-meta-item">
+              <svg class="icon icon-xs"><use href="#i-award"/></svg>
+              Electronics and Communication Engineering
+            </div>
+            <span class="dot-sep"></span>
+            <div class="edu-meta-item">
+              <svg class="icon icon-xs text-primary"><use href="#i-pin"/></svg>
+              Sonepat, Haryana
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- ══════════════════════ SKILLS ══════════════════════ -->
+  <section id="skills" class="section">
+    <div class="section-header">
+      <div class="section-icon-wrap">
+        <svg class="icon"><use href="#i-cpu"/></svg>
+      </div>
+      <div>
+        <h2 class="section-title">Skills</h2>
+        <p class="section-subtitle">Technical Expertise &amp; Experience</p>
+      </div>
+    </div>
+
+    <div class="skills-grid">
+
+      <!-- Column 1 -->
+      <div class="skills-col">
+
+        <div class="glass-card skill-card">
+          <h3 class="skill-category-title">
+            <svg class="icon icon-sm text-primary"><use href="#i-award"/></svg>
+            Languages &amp; Backend
+          </h3>
+          <div class="skill-bars">
+            <div class="skill-bar-item">
+              <div class="skill-bar-meta">
+                <span class="skill-name">Golang</span>
+                <span class="skill-level"><span class="level-label">Expert</span> · 9 yrs</span>
+              </div>
+              <div class="skill-bar-track"><div class="skill-bar-fill expert-fill" style="width:90%"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-bar-meta">
+                <span class="skill-name">PHP</span>
+                <span class="skill-level"><span class="level-label">Advanced</span> · 5 yrs</span>
+              </div>
+              <div class="skill-bar-track"><div class="skill-bar-fill advanced-fill" style="width:75%"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-bar-meta">
+                <span class="skill-name">Node.js</span>
+                <span class="skill-level"><span class="level-label">Intermediate</span> · 3 yrs</span>
+              </div>
+              <div class="skill-bar-track"><div class="skill-bar-fill intermediate-fill" style="width:55%"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-bar-meta">
+                <span class="skill-name">Bash / Shell</span>
+                <span class="skill-level"><span class="level-label">Advanced</span> · 7 yrs</span>
+              </div>
+              <div class="skill-bar-track"><div class="skill-bar-fill advanced-fill" style="width:75%"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="glass-card skill-card">
+          <h3 class="skill-category-title">
+            <svg class="icon icon-sm text-primary"><use href="#i-award"/></svg>
+            Databases
+          </h3>
+          <div class="skill-bars">
+            <div class="skill-bar-item">
+              <div class="skill-bar-meta">
+                <span class="skill-name">MySQL</span>
+                <span class="skill-level"><span class="level-label">Expert</span> · 9 yrs</span>
+              </div>
+              <div class="skill-bar-track"><div class="skill-bar-fill expert-fill" style="width:90%"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-bar-meta">
+                <span class="skill-name">MongoDB</span>
+                <span class="skill-level"><span class="level-label">Advanced</span> · 5 yrs</span>
+              </div>
+              <div class="skill-bar-track"><div class="skill-bar-fill advanced-fill" style="width:75%"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-bar-meta">
+                <span class="skill-name">Redis</span>
+                <span class="skill-level"><span class="level-label">Advanced</span> · 5 yrs</span>
+              </div>
+              <div class="skill-bar-track"><div class="skill-bar-fill advanced-fill" style="width:75%"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-bar-meta">
+                <span class="skill-name">Google Cloud Spanner</span>
+                <span class="skill-level"><span class="level-label">Intermediate</span> · 3 yrs</span>
+              </div>
+              <div class="skill-bar-track"><div class="skill-bar-fill intermediate-fill" style="width:55%"></div></div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Column 2 -->
+      <div class="skills-col">
+
+        <div class="glass-card skill-card">
+          <h3 class="skill-category-title">
+            <svg class="icon icon-sm text-primary"><use href="#i-award"/></svg>
+            Cloud &amp; Infrastructure
+          </h3>
+          <div class="skill-bars">
+            <div class="skill-bar-item">
+              <div class="skill-bar-meta">
+                <span class="skill-name">Google Cloud Platform</span>
+                <span class="skill-level"><span class="level-label">Expert</span> · 5 yrs</span>
+              </div>
+              <div class="skill-bar-track"><div class="skill-bar-fill expert-fill" style="width:90%"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-bar-meta">
+                <span class="skill-name">Kubernetes</span>
+                <span class="skill-level"><span class="level-label">Advanced</span> · 4 yrs</span>
+              </div>
+              <div class="skill-bar-track"><div class="skill-bar-fill advanced-fill" style="width:75%"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-bar-meta">
+                <span class="skill-name">Docker</span>
+                <span class="skill-level"><span class="level-label">Expert</span> · 5 yrs</span>
+              </div>
+              <div class="skill-bar-track"><div class="skill-bar-fill expert-fill" style="width:90%"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-bar-meta">
+                <span class="skill-name">GitHub Actions CI/CD</span>
+                <span class="skill-level"><span class="level-label">Advanced</span> · 4 yrs</span>
+              </div>
+              <div class="skill-bar-track"><div class="skill-bar-fill advanced-fill" style="width:75%"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="glass-card skill-card">
+          <h3 class="skill-category-title">
+            <svg class="icon icon-sm text-primary"><use href="#i-award"/></svg>
+            Observability
+          </h3>
+          <div class="skill-bars">
+            <div class="skill-bar-item">
+              <div class="skill-bar-meta">
+                <span class="skill-name">ELK Stack</span>
+                <span class="skill-level"><span class="level-label">Advanced</span> · 4 yrs</span>
+              </div>
+              <div class="skill-bar-track"><div class="skill-bar-fill advanced-fill" style="width:75%"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-bar-meta">
+                <span class="skill-name">Distributed Tracing</span>
+                <span class="skill-level"><span class="level-label">Advanced</span> · 4 yrs</span>
+              </div>
+              <div class="skill-bar-track"><div class="skill-bar-fill advanced-fill" style="width:75%"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-bar-meta">
+                <span class="skill-name">Correlation ID Framework</span>
+                <span class="skill-level"><span class="level-label">Advanced</span> · 3 yrs</span>
+              </div>
+              <div class="skill-bar-track"><div class="skill-bar-fill advanced-fill" style="width:75%"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-bar-meta">
+                <span class="skill-name">Alerting Systems</span>
+                <span class="skill-level"><span class="level-label">Advanced</span> · 3 yrs</span>
+              </div>
+              <div class="skill-bar-track"><div class="skill-bar-fill advanced-fill" style="width:75%"></div></div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Full-width: Distributed Systems + AI workflows -->
+      <div class="skills-full-row">
+        <div class="glass-card skill-card">
+          <h3 class="skill-category-title">Distributed Systems &amp; AI</h3>
+          <div class="workflow-grid">
+            <div class="workflow-item">
+              <svg class="icon icon-sm text-primary"><use href="#i-check"/></svg>
+              Microservices Architecture
+            </div>
+            <div class="workflow-item">
+              <svg class="icon icon-sm text-primary"><use href="#i-check"/></svg>
+              Event-Driven Architecture (Kafka)
+            </div>
+            <div class="workflow-item">
+              <svg class="icon icon-sm text-primary"><use href="#i-check"/></svg>
+              Google Pub/Sub
+            </div>
+            <div class="workflow-item">
+              <svg class="icon icon-sm text-primary"><use href="#i-check"/></svg>
+              gRPC &amp; REST APIs
+            </div>
+            <div class="workflow-item">
+              <svg class="icon icon-sm text-primary"><use href="#i-check"/></svg>
+              Agentic AI Workflows
+            </div>
+            <div class="workflow-item">
+              <svg class="icon icon-sm text-primary"><use href="#i-check"/></svg>
+              LLM Integration
+            </div>
+            <div class="workflow-item">
+              <svg class="icon icon-sm text-primary"><use href="#i-check"/></svg>
+              Model Context Protocol (MCP)
+            </div>
+            <div class="workflow-item">
+              <svg class="icon icon-sm text-primary"><use href="#i-check"/></svg>
+              CopilotKit &amp; AG-UI (a2ui)
+            </div>
+            <div class="workflow-item">
+              <svg class="icon icon-sm text-primary"><use href="#i-check"/></svg>
+              GitHub Copilot CLI
+            </div>
+            <div class="workflow-item">
+              <svg class="icon icon-sm text-primary"><use href="#i-check"/></svg>
+              CubeJS Analytics Platform
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- ══════════════════════ PROJECTS ══════════════════════ -->
+  <section id="projects" class="section">
+    <div class="section-header">
+      <div class="section-icon-wrap">
+        <svg class="icon"><use href="#i-folder"/></svg>
+      </div>
+      <div>
+        <h2 class="section-title">Projects</h2>
+        <p class="section-subtitle">Open Source &amp; Personal Work</p>
+      </div>
+    </div>
+
+    <div class="projects-grid">
+
+      <div class="glass-card project-card">
+        <div class="project-header">
+          <h3 class="project-title">Lyra</h3>
+          <a href="https://github.com/sourabh-kumar2/lyra" target="_blank" rel="noreferrer"
+             class="project-link-btn" aria-label="View on GitHub">
+            <svg class="icon icon-sm"><use href="#i-github"/></svg>
+          </a>
+        </div>
+        <p class="project-subtitle">Type-Safe DAG Task Orchestration Library · Go</p>
+        <p class="project-desc">
+          Designed and published an open-source Go library for orchestrating dependent tasks as a
+          Directed Acyclic Graph (DAG) with automatic concurrency, type-safe result passing, and
+          built-in cycle detection.
+        </p>
+        <div class="project-tags">
+          <span class="project-tag">Go</span>
+          <span class="project-tag">DAG</span>
+          <span class="project-tag">Concurrency</span>
+          <span class="project-tag">Open Source</span>
+        </div>
+        <div class="project-footer">
+          <a href="https://github.com/sourabh-kumar2/lyra" target="_blank" rel="noreferrer"
+             class="btn btn-secondary btn-sm">
+            <svg class="icon icon-xs"><use href="#i-link"/></svg>
+            View on GitHub
+          </a>
+        </div>
+      </div>
+
+      <div class="glass-card project-card">
+        <div class="project-header">
+          <h3 class="project-title">DNS-Discovery</h3>
+          <a href="https://github.com/sourabh-kumar2" target="_blank" rel="noreferrer"
+             class="project-link-btn" aria-label="View on GitHub">
+            <svg class="icon icon-sm"><use href="#i-github"/></svg>
+          </a>
+        </div>
+        <p class="project-subtitle">High-Performance In-Memory DNS Server · Go</p>
+        <p class="project-desc">
+          Built a high-performance in-memory DNS server in Go supporting dynamic service discovery
+          with A, AAAA, and TXT record resolution, eliminating hardcoded service configurations.
+        </p>
+        <div class="project-tags">
+          <span class="project-tag">Go</span>
+          <span class="project-tag">DNS</span>
+          <span class="project-tag">Service Discovery</span>
+          <span class="project-tag">In-Memory</span>
+        </div>
+        <div class="project-footer">
+          <a href="https://github.com/sourabh-kumar2" target="_blank" rel="noreferrer"
+             class="btn btn-secondary btn-sm">
+            <svg class="icon icon-xs"><use href="#i-link"/></svg>
+            View on GitHub
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- ══════════════════════ AWARDS ══════════════════════ -->
+  <section id="awards" class="section">
+    <div class="section-header">
+      <div class="section-icon-wrap section-icon-amber">
+        <svg class="icon"><use href="#i-trophy"/></svg>
+      </div>
+      <div>
+        <h2 class="section-title">Awards</h2>
+        <p class="section-subtitle">Achievements &amp; Recognitions</p>
+      </div>
+    </div>
+
+    <div class="awards-grid">
+
+      <div class="glass-card award-card">
+        <div class="award-icon-wrap">
+          <svg class="icon"><use href="#i-trophy"/></svg>
+        </div>
+        <div class="award-content">
+          <div class="award-header">
+            <h3 class="award-title">Iron Pillar Award</h3>
+            <div class="award-date">
+              <svg class="icon icon-xs"><use href="#i-calendar"/></svg> 2024
+            </div>
+          </div>
+          <div class="award-org">Brevo</div>
+          <p class="award-desc">Recognized for exceptional contribution to the organization's core infrastructure and sustained technical excellence across engineering initiatives.</p>
+        </div>
+      </div>
+
+      <div class="glass-card award-card">
+        <div class="award-icon-wrap">
+          <svg class="icon"><use href="#i-trophy"/></svg>
+        </div>
+        <div class="award-content">
+          <div class="award-header">
+            <h3 class="award-title">Spotlight Award</h3>
+            <div class="award-date">
+              <svg class="icon icon-xs"><use href="#i-calendar"/></svg> 2023
+            </div>
+          </div>
+          <div class="award-org">Brevo</div>
+          <p class="award-desc">Awarded for outstanding performance and significant impact on engineering team productivity and product delivery quality.</p>
+        </div>
+      </div>
+
+      <div class="glass-card award-card">
+        <div class="award-icon-wrap">
+          <svg class="icon"><use href="#i-trophy"/></svg>
+        </div>
+        <div class="award-content">
+          <div class="award-header">
+            <h3 class="award-title">Pat On The Back Award</h3>
+            <div class="award-date">
+              <svg class="icon icon-xs"><use href="#i-calendar"/></svg> May 2018
+            </div>
+          </div>
+          <div class="award-org">Tech Mahindra</div>
+          <p class="award-desc">Commended for exceptional dedication and contributions to enterprise portal development and cross-functional project delivery.</p>
+        </div>
+      </div>
+
+      <div class="glass-card award-card">
+        <div class="award-icon-wrap">
+          <svg class="icon"><use href="#i-trophy"/></svg>
+        </div>
+        <div class="award-content">
+          <div class="award-header">
+            <h3 class="award-title">Excellence Certificate</h3>
+            <div class="award-date">
+              <svg class="icon icon-xs"><use href="#i-calendar"/></svg> Sept 2017
+            </div>
+          </div>
+          <div class="award-org">Tech Mahindra</div>
+          <p class="award-desc">Recognized for consistent excellence and high-quality delivery across software engineering projects and client engagements.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>Designed &amp; built by <strong>Sourabh Kumar</strong> &nbsp;·&nbsp; 2025</p>
+  </footer>
+
+</main>
+
+<!-- ===== SCRIPTS ===== -->
+<script>
+  // ── Theme toggle ──────────────────────────────────────────────
+  function applyTheme(dark) {
+    document.documentElement.classList.toggle('dark', dark);
+    localStorage.setItem('theme', dark ? 'dark' : 'light');
+  }
+
+  ['themeToggle', 'themeToggleMobile'].forEach(function (id) {
+    var btn = document.getElementById(id);
+    if (btn) btn.addEventListener('click', function () {
+      applyTheme(!document.documentElement.classList.contains('dark'));
+    });
+  });
+
+  // ── Mobile drawer ─────────────────────────────────────────────
+  var overlay   = document.getElementById('drawerOverlay');
+  var menuToggle = document.getElementById('menuToggle');
+  var openIcon  = document.getElementById('menuOpenIcon');
+  var closeIcon = document.getElementById('menuCloseIcon');
+
+  function openDrawer() {
+    overlay.classList.add('open');
+    openIcon.style.display  = 'none';
+    closeIcon.style.display = '';
+  }
+  function closeDrawer() {
+    overlay.classList.remove('open');
+    openIcon.style.display  = '';
+    closeIcon.style.display = 'none';
+  }
+
+  menuToggle.addEventListener('click', openDrawer);
+  document.getElementById('drawerClose').addEventListener('click', closeDrawer);
+  overlay.addEventListener('click', function (e) {
+    if (e.target === overlay) closeDrawer();
+  });
+
+  // close drawer when a nav link is clicked
+  document.querySelectorAll('.drawer-nav-link').forEach(function (a) {
+    a.addEventListener('click', closeDrawer);
+  });
+
+  // ── Active nav link highlighting ──────────────────────────────
+  var sections = document.querySelectorAll('section[id]');
+  var navLinks = document.querySelectorAll('[data-section]');
+
+  var observer = new IntersectionObserver(function (entries) {
+    entries.forEach(function (entry) {
+      if (entry.isIntersecting) {
+        navLinks.forEach(function (link) {
+          link.classList.toggle('active', link.dataset.section === entry.target.id);
+        });
+      }
+    });
+  }, { rootMargin: '-40% 0px -55% 0px', threshold: 0 });
+
+  sections.forEach(function (s) { observer.observe(s); });
+</script>
+
+</body>
+</html>
